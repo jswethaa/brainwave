@@ -1,11 +1,24 @@
 import ButtonGradient from "./assets/svg/ButtonGradient"
-const App = () => {
+import Benefits from "./component/Benefits"
+import Button from "./component/Button"
+import Collaboration from "./component/Collaboration"
+import Header from "./component/Header"
+import Hero from "./component/Hero"
+function App() {
+ 
+
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world </h1>
-      <
-      <ButtonGradient />
+      
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Header/>
+        <Hero/>
+        <Benefits/>
+        <Collaboration/>
+      </div>
+      <ButtonGradient/>
     </>
   )
 }
+
 export default App
